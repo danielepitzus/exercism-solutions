@@ -89,10 +89,3 @@ def fail_safe(temperature, neutrons_produced_per_second, threshold):
     else:
         return "DANGER"
 
-
-
-
-
-
-
-print(is_criticality_balanced(800, 500.01))
