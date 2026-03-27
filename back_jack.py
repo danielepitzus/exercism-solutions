@@ -52,22 +52,9 @@ def value_of_ace(card_one, card_two):
     3.  '2' - '10' = numerical value.
     """
 
-    total = 0
-    has_ace = False
-
-    for card in [card_one, card_two]:
-        if card == "A":
-            has_ace = True
-            total += 1
-        elif card in ["J", "Q", "K"]:
-            total += 10
-        else:
-            total += int(card)
-
-    if has_ace and total + 10 <= 21:
-        total += 10
-
-    if total + 11 <= 21:
+    if (card_one == "A" or card_two == "A"):
+        return 1
+    if (value_of_card(card_one) + value_of_card(card_two) <= 10):
         return 11
     return 1
 
@@ -82,8 +69,7 @@ def is_blackjack(card_one, card_two):
     2.  'A' (ace card) = 11 (if already in hand)
     3.  '2' - '10' = numerical value.
     """
-    cards = [card_one, card_two]
-    return "A" in cards and any(card in ["10", "J", "Q", "K"] for card in cards)
+    return  (card_one == "A" and value_of_card(card_two) == 10) or (card_two == "A" and value_of_card(card_one) == 10)
 
 
 def can_split_pairs(card_one, card_two):
@@ -93,9 +79,8 @@ def can_split_pairs(card_one, card_two):
     :return: bool - can the hand be split into two pairs? (i.e. cards are of the same value).
     """
 
-    if value_of_card(card_one) == value_of_card(card_two):
-        return True
-    return False
+    return value_of_card(card_one) == value_of_card(card_two)
+
 
 
 def can_double_down(card_one, card_two):
@@ -105,7 +90,5 @@ def can_double_down(card_one, card_two):
     :return: bool - can the hand can be doubled down? (i.e. totals 9, 10 or 11 points).
     """
 
-    point = value_of_card(card_one) + value_of_card(card_two)
-    if 9 <= point <= 11:
-        return True
-    return False
+    return 9 <= value_of_card(card_one) + value_of_card(card_two) <= 11
+
