@@ -8,6 +8,7 @@ This is a repository where I post solutions for Exercism. If you notice any ways
 - Within a function, if a branch already has a return statement, the final else is often unnecessary, because the function exits immediately.
 
 26/03/26
+
 ---
 
 ### Learn with black_jack.py
