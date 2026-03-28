@@ -18,7 +18,7 @@ def value_of_card(card):
 
     if card == "A":
         return 1
-    if card in ["K", "Q", "J"]:
+    if card in {"K", "Q", "J"}:
         return 10
     return int(card)
 
@@ -91,4 +91,3 @@ def can_double_down(card_one, card_two):
     """
 
     return 9 <= value_of_card(card_one) + value_of_card(card_two) <= 11
-
