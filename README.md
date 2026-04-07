@@ -29,7 +29,7 @@ This is a repository where I post solutions for Exercism. If you notice any ways
 
 ---
 
-###Things I learnt from ‘tisbury_treasure_hunt’
+### Things I learnt from ‘tisbury_treasure_hunt’
 The last function (clean_up) caused me a few problems:
 - I couldn’t figure out how to remove that tuple element
 - I’d worked out how to format them, but I hadn’t realised how to display them all on screen at once
