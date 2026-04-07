@@ -26,3 +26,22 @@ This is a repository where I post solutions for Exercism. If you notice any ways
 - [Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)
 
 28/03/26
+
+---
+
+###Things I learnt from ‘tisbury_treasure_hunt’
+The last function (clean_up) caused me a few problems:
+- I couldn’t figure out how to remove that tuple element
+- I’d worked out how to format them, but I hadn’t realised how to display them all on screen at once
+
+I got some help with these two points after trying to figure them out for a while, and I feel a bit silly for not having thought of them myself
+- the first was to split the records by index
+- the second was to generate a report 
+
+basically, I can’t say I’ve solved this function; I think I’ll come back to it in the future when I’ve forgotten it, although I doubt that my future self won’t know how to solve it, but never take anything for granted
+
+
+07/04/26
+
+
+
