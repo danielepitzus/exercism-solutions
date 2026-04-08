@@ -61,7 +61,3 @@ def clean_up(combined_record_group):
       cleaned = (record[0], record[2], record[3], record[4])
       report += f"{cleaned}\n"
     return report
-
-
-
-print(create_record(('Angry Monkey Figurine', '5B'), ('Stormy Breakwater', ('5', 'B'), 'Purple')))
