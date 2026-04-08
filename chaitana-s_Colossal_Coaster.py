@@ -81,6 +81,3 @@ def sorted_names(queue):
     :return: list - copy of the queue in alphabetical order.
     """
     return sorted(queue)
-
-
-print(sorted_names(queue=['Steve', 'Ultron', 'Natasha', 'Rocket']))
